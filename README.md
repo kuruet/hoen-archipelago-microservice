@@ -1,58 +1,59 @@
-Hoen Archipelago Microservice
+🌴 Hoen Archipelago Microservice
 
-A Dropwizard microservice providing hotel and car rental search functionality for the Hoen Archipelago. This service is designed to be a lightweight, modular component that could integrate with a platform like Skyscanner.
+A Dropwizard microservice for searching hotels 🏨 and car rentals 🚗 in the Hoen Archipelago. Lightweight, modular, and ready for integration with platforms like Skyscanner!
 
-Table of Contents
-
-Overview
-
-Features
-
-Technologies
-
-Project Structure
-
-Setup & Running
-
-API Endpoints
-
-Sample Data
-
-Example Response
-
-Future Improvements
+📚 Table of Contents
 
 Overview
 
-The Hoen Archipelago has recently gained international attention for its unique fauna and tourist appeal. This microservice manages searches for hotels and car rental services in the region.
+Features ✨
 
-Users can search by city name.
+Technologies 🛠️
 
-Returns available hotels and car rentals in that city.
+Project Structure 🗂️
 
-Built as a Dropwizard microservice for lightweight and independent deployment.
+Setup & Running 🚀
 
-Features
+API Documentation 📡
 
-RESTful search endpoint for hotels and car rentals.
+Sample Data 📁
 
-Sample data included for demonstration.
+Example Response 💬
 
-Fully modular structure for easy future extension.
+Future Improvements 🔮
 
-JSON-based response for easy integration with other services.
+License 📝
 
-Technologies
+🌟 Overview
 
-Java 11 – programming language
+The Hoen Archipelago has become a tourist hotspot 🐦🦎 thanks to its unique fauna.
+This microservice handles searches for hotels and car rentals by city, returning results in JSON format.
 
-Dropwizard 2.x – microservice framework
+Goals:
 
-Jackson – JSON serialization/deserialization
+Lightweight & modular 🧩
 
-Maven – project management & build tool
+Easy integration with other services 🔗
 
-Project Structure
+Demonstrates microservice architecture in Dropwizard ⚡
+
+✨ Features
+
+Search hotels 🏨 and car rentals 🚗 by city
+
+JSON-based REST endpoint 🌐
+
+Includes sample data for demonstration 📂
+
+Modular & extendable structure for future growth 📈
+
+🛠️ Technologies
+Technology	Purpose
+Java 11 ☕	Programming language
+Dropwizard 2.x 🚀	Microservice framework
+Jackson 🎨	JSON serialization/deserialization
+Maven 📦	Build & dependency management
+🗂️ Project Structure
 hoen-archipelago-microservice/
 │
 ├─ pom.xml
@@ -71,48 +72,41 @@ hoen-archipelago-microservice/
             ├─ hotels.json
             └─ cars.json
 
-Setup & Running
+🚀 Setup & Running
 Prerequisites
 
-Java 11 or higher
+Java 11+ ☕
 
-Maven 3.x
+Maven 3+ 📦
 
-Steps
-
-Clone the repository:
-
+Clone the Repo
 git clone https://github.com/kuruet/hoen-archipelago-microservice.git
 cd hoen-archipelago-microservice
 
-
-Build the project:
-
+Build
 mvn clean package
 
-
-Run the microservice:
-
+Run
 java -jar target/hoen-archipelago-microservice-1.0-SNAPSHOT.jar server
 
 
-The service will start on localhost:8080 by default.
+Service runs at: http://localhost:8080 🌐
 
-API Endpoints
-1. Search
+📡 API Documentation
+Search Endpoint
 
 URL: /search
 Method: GET
 Query Parameter:
 
-city – The city name to search for hotels and car rentals
+city – Name of the city to search hotels 🏨 and car rentals 🚗
 
 Example Request:
 
 GET http://localhost:8080/search?city=Port%20Sibil
 
 
-Response:
+Example Response: 💬
 
 {
   "hotels": [
@@ -131,20 +125,28 @@ Response:
   ]
 }
 
-Sample Data
+📁 Sample Data
 
-Hotels: src/main/resources/hotels.json
+Located in src/main/resources:
 
-Car Rentals: src/main/resources/cars.json
+hotels.json 🏨
 
-You can replace these JSON files with real data in the future.
+cars.json 🚗
 
-Future Improvements
+Tip: Replace with real data for production 🚀
 
-Add database integration instead of static JSON.
+🔮 Future Improvements
 
-Implement search by additional filters (price range, rating, availability).
+Replace static JSON with a database-backed search 🗄️
 
-Add unit and integration tests for production readiness.
+Add filters: price, rating, availability 🛎️
 
-Extend to support multiple languages or currencies.
+Unit & integration tests ✅
+
+Multi-language & currency support 🌍
+
+Swagger/OpenAPI documentation 📖
+
+📝 License
+
+MIT License © 2025 Kuruet
